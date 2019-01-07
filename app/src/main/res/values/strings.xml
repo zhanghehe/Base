@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Base</string>
+
+
+    <string name="state_none_net">网络异常哦~</string>
+    <string name="state_click_refresh">点击屏幕刷新</string>
 </resources>

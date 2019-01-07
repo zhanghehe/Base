@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#f5f5f5</color>
+    <color name="colorPrimaryDark">#0d2f55</color>
+    <color name="colorAccent">@color/color_f18925</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="bg_30">#b3000000</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="white_40">#66ffffff</color>
+    <color name="gray_3">#333333</color>
+    <color name="gray_8">#888888</color>
+    <color name="test">@color/colorAccent</color>
+
+    <color name="color_black_80">#80000000</color>
+    <color name="color_black_40">#40000000</color>
+    <color name="color_1e5c8e">#1e5c8e</color>
+    <color name="color_eaeaea">#eaeaea</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_0d2f55">#0d2f55</color>
+    <color name="color_71829b">#71829B</color>
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_303030">#303030</color>
+    <color name="color_c8c8c8">#c8c8c8</color>
+    <color name="color_bdbdbd">#bdbdbd</color>
+    <color name="color_f18925">#f18925</color>
+    <color name="color_fde7d6">#fde7d6</color>
+    <color name="color_2a5381">#2a5381</color>
+    <color name="color_9eacbb">#9eacbb</color>
+    <color name="color_2c3088">#2c3088</color>
+    <color name="color_e6eeff">#e6eeff</color>
+    <color name="color_4ce6eeff">#4ce6eeff</color>
+    <color name="color_888888">#888888</color>
+    <color name="color_f8f9fa">#f8f9fa</color>
+    <color name="color_fffaf6">#fffaf6</color>
+    <color name="pop_background">#b3000000</color>
+    <color name="color_ff3a55">#ff3a55</color>
+    <color name="color_ffe9d4">#FFE9D4</color>
+    <color name="color_d0d5dd">#d0d5dd</color>
+    <color name="color_2c3038">#2c3038</color>
+    <color name="black_20">#c4c4c4</color>
+    <color name="color_95989a">#95989a</color>
+    <color name="color_3da2f3">#3da2f4</color>
+    <color name="color_d2ebff">#d2ebff</color>
+    <!--70%透明color_2c3038-->
+    <color name="color_B22C3038">#B22C3038</color>
+
+    <color name="line">@color/color_e5e5e5</color>
+    <color name="black">#000000</color>
+    <drawable name="progress_bar_bg">#80FFFFFF</drawable>
 </resources>
