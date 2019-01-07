@@ -37,10 +37,10 @@ import me.yokeyword.fragmentation.anim.FragmentAnimator;
  * Created by zhanghehe on 2018/11/1.
  * desc:
  */
-public abstract class BaseBindingActivity<B extends ViewDataBinding> extends AppCompatActivity implements ISupportActivity, IView {
+public abstract class BaseActivity<B extends ViewDataBinding> extends AppCompatActivity implements ISupportActivity, IView {
     protected B binding;
     final SupportActivityDelegate mDelegate = new SupportActivityDelegate(this);
-    public BaseBindingActivity context;
+    public BaseActivity context;
     private SmartRefreshLayout srl;
     private StateLayout slRoot;
     protected RxPermissions permissions;

@@ -1,12 +1,17 @@
 package com.zhh.base.toolkit.base;
 
 import android.app.Activity;
+import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
@@ -35,8 +40,8 @@ import me.yokeyword.fragmentation.anim.FragmentAnimator;
  * 特别说明：当布局中存在SmartRefreshLayout并id命名为srl，则在初始化时自动刷新；
  **/
 
-public abstract class BaseFragment extends Fragment implements ISupportFragment, IView {
-
+public abstract class BaseFragment<B extends ViewDataBinding> extends Fragment implements ISupportFragment, IView {
+    protected B binding;
     final SupportFragmentDelegate mDelegate = new SupportFragmentDelegate(this);
     protected FragmentActivity context;
     protected LoadingView loadingView;
@@ -69,6 +74,13 @@ public abstract class BaseFragment extends Fragment implements ISupportFragment,
         EventBus.getDefault().register(this);
         mDelegate.onCreate(savedInstanceState);
 
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        binding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false);
+        return binding.getRoot();
     }
 
     @Override
@@ -190,6 +202,7 @@ public abstract class BaseFragment extends Fragment implements ISupportFragment,
         mDelegate.setUserVisibleHint(isVisibleToUser);
     }
 
+    public abstract int getLayoutId();
 
     /**
      * If you want to call the start()/pop()/showHideFragment() on the onCreateXX/onActivityCreated,
