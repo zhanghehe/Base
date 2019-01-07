@@ -4,12 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.zhh.base.R;
+import com.zhh.base.databinding.ActivityMainBinding;
+import com.zhh.base.toolkit.base.BaseBindingActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public int getLayoutId() {
+        return R.layout.activity_main;
     }
 }

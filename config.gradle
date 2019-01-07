@@ -3,10 +3,10 @@ ext {
     android = [
                compileSdkVersion       : 28,
                buildToolsVersion       : "27.0.3",
-               minSdkVersion           : 16,
+               minSdkVersion           : 17,
                targetSdkVersion        : 28,
-               versionCode             : 400,
-               versionName             : "4.0.0"
+               versionCode             : 1,
+               versionName             : "1.0.0"
     ]
 
      version = [
@@ -66,7 +66,6 @@ ext {
                 "rxcache"                  : "com.github.VictorAlbertos.RxCache:runtime:1.7.0-1.x",
                 "rxcache-jolyglot-gson"    : "com.github.VictorAlbertos.Jolyglot:gson:0.0.3",
                 "rxbinding-recyclerview-v7": "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:1.0.1",
-                "rxpermissions"            : "com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar",
                 "rxerrorhandler"           : "me.jessyan:rxerrorhandler:1.0.1",
 
                 //rx2
