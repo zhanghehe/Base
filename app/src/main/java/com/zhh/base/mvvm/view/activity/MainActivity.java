@@ -1,7 +1,9 @@
-package com.zhh.base;
+package com.zhh.base.mvvm.view.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.zhh.base.R;
 
 public class MainActivity extends AppCompatActivity {
 
